@@ -236,11 +236,11 @@ MODULE_PARM(yaffs_gc_control, "i");
 #define Y_CLEAR_INODE(i) end_writeback(i)
 #endif
 
-#if (LINUX_VERSION_CODE >= KERNEL_VERSION(3, 12, 0))
+#if (LINUX_VERSION_CODE >= KERNEL_VERSION(3, 11, 0))
 #define YAFFS_USE_DIR_ITERATE
 #endif
 
-#if (LINUX_VERSION_CODE >= KERNEL_VERSION(3,12,0))
+#if (LINUX_VERSION_CODE >= KERNEL_VERSION(3,10,0))
 #define YAFFS_NEW_PROCFS
 #include <linux/seq_file.h>
 #endif
